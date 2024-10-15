@@ -1,0 +1,49 @@
+:root {
+  --primary: #9EFF00;
+  --secondary: #00E5FF;
+  --accent: #EDFF00;
+  --background: #0A0E17;
+  --text: #F7FAFC;
+  --card-bg: #1E1E1E;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.header, .footer {
+  background-color: var(--card-bg);
+}
+
+.intro-section {
+  padding: 4rem 2rem;
+}
+
+.header__nav a:hover, .footer__social-link:hover {
+  color: var(--primary);
+}
+
+.footer__button {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.footer__button:hover {
+  background-color: var(--secondary);
+}
+.innovations-section, .partnerships-section {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.innovations-content, .partnerships-content {
+  position: absolute;
+  z-index: 2;
+  color: var(--text);
+}
